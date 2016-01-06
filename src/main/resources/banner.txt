@@ -1,0 +1,37 @@
+
+
+********************************************************************
+    FrameWork   ${version}
+    SpringBoot  ${spring-boot.version}
+********************************************************************
+
+
+System.properties:
+--------------------------------------------------------------------
+    java.specification.version    = ${java.specification.version}
+    java.specification.vendor     = ${java.specification.vendor}
+    java.specification.name       = ${java.specification.name}
+    java.vm.specification.version = ${java.vm.specification.version}
+    java.vm.specification.vendor  = ${java.vm.specification.vendor}
+    java.vm.specification.name    = ${java.vm.specification.name}
+    java.home                     = ${java.home}
+    java.version                  = ${java.version}
+    java.vendor                   = ${java.vendor}
+    java.vendor.url               = ${java.vendor.url}
+    java.vm.version               = ${java.vm.version}
+    java.vm.vendor                = ${java.vm.vendor}
+    java.vm.name                  = ${java.vm.name}
+    java.class.version            = ${java.class.version}
+    java.class.path               = ${java.class.path}
+    java.library.path             = ${java.library.path}
+    java.io.tmpdir                = ${java.io.tmpdir}
+    java.compiler                 = ${java.compiler}
+    java.ext.dirs                 = ${java.ext.dirs}
+    os.name                       = ${os.name}
+    os.arch                       = ${os.arch}
+    os.version                    = ${os.version}
+    user.name                     = ${user.name}
+    user.home                     = ${user.home}
+    user.dir                      = ${user.dir}
+---------------------------------------------------------------------
+

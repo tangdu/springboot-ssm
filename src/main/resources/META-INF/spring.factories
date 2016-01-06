@@ -1,0 +1,10 @@
+# Run Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+
+# Auto Configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.tdu.autoconfiguration.MyBatisAutoConfiguration,\
+com.tdu.autoconfiguration.WebMvcSecurityJpaAutoConfiguration,\
+com.tdu.autoconfiguration.FrameworkMvcAutoConfiguration,\
+com.tdu.autoconfiguration.ComponentScanAutoConfiguration,\
+com.tdu.autoconfiguration.EhcacheAutoConfiguration
