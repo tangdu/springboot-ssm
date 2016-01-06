@@ -18,7 +18,7 @@ public class UserService {
 	@Autowired
 	UserMapper userMapper;
 
-	//@Cacheable(value=CACHE_NAME,key="\"user_all\"")
+	@Cacheable(value=CACHE_NAME,key="\"user_all\"")
 	public List<User> findAll() {
 		return userMapper.findAll();
 	}

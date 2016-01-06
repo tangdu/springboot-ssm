@@ -8,14 +8,6 @@
         </encoder>
     </appender>
 
-	<!--打印mybatis日志-->
-	<logger name="org.apache.ibatis" level="DEBUG">
-		<appender-ref ref="STDOUT"/>
-	</logger>
-	<logger name="java.sql" level="debug">
-	    <appender-ref ref="STDOUT"/>
-	</logger>  
-	
 	<!--
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>/logs/app.log</file>
