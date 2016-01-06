@@ -1,8 +1,14 @@
-
+<!DOCTYPE html>
 <html>
-	<form th:action="@{/login}" method="post">
-		用户名:<input name="username" type="text" value="admin"/>
-		口 令:<input name="password" type="text" autofocus="autofocus" value="admin"/>
-		<input type="submit"/>提交
-	</form>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link th:href="@{resources/com/tdu/css/amazeui.min.css}" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<form th:action="@{/login}" method="post">
+			用户名:<input name="username" type="text" value="admin"/>
+			口 令:<input name="password" type="text" autofocus="autofocus" value="admin"/>
+			<input type="submit"/>提交
+		</form>
+	</body>
 </html>
