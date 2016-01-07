@@ -6,11 +6,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(
-		basePackages={
-			"com.tdu.service",
-			"com.tdu.web"
-		}
-	)
+	basePackages={
+		"com.tdu.service",
+		"com.tdu.web"
+	}
+)
 public class Application {
 
 	public static void main(String[] args) {

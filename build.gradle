@@ -44,6 +44,7 @@ dependencies {
 		"mysql:mysql-connector-java:${mysql_version}",
 		"org.mybatis:mybatis:${mybatis_version}",
 		"org.mybatis:mybatis-spring:${mybatis_spring_version}",
+		"org.mybatis.generator:mybatis-generator-core:${mybatis_generator_version}",
 		"net.sf.ehcache:ehcache:${ehcache_version}",
 		"junit:junit:${junit_version}"
 	)

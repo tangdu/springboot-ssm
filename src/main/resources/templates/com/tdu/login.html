@@ -2,13 +2,30 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="renderer" content="webkit"/>
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<link th:href="@{resources/com/tdu/css/amazeui.min.css}" rel="stylesheet" type="text/css" />
 	</head>
+	<style>
+		.mt20{
+			margin-top: 100px;
+		}
+	</style>
 	<body>
-		<form th:action="@{/login}" method="post">
-			用户名:<input name="username" type="text" value="admin"/>
-			口 令:<input name="password" type="text" autofocus="autofocus" value="admin"/>
-			<input type="submit"/>提交
-		</form>
+		<div class="am-g">
+			<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered mt20">
+				<form th:action="@{/login}" method="post" class="am-form">
+					用户名:<input name="username" type="text" value="admin"/>
+					口 令:<input name="password" type="text" autofocus="autofocus" value="admin"/>
+					<br/>
+					<div class="am-cf">
+						<input type="submit" class="am-btn am-btn-default am-btn-primary"/>
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

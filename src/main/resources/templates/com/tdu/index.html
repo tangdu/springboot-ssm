@@ -1,12 +1,71 @@
 <html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link th:href="@{resources/com/tdu/css/amazeui.min.css}" rel="stylesheet" type="text/css" />
+</head>
 <body>
-	Hello SpringBoot
-	
-	<br/>
-	路径信息：
-	<div th:text="${ControllerClass}"></div>
-	<div th:text="${ControllerMethod}"></div>
-	<div th:text="${ControllerMethodType}"></div>
-	<div th:text="${ControllerUrl}"></div>
+	<header class="am-topbar admin-header">
+	  <div class="am-topbar-brand">
+	    <strong>SpringBoot</strong> <small>MyBatis</small>
+	  </div>
+	  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+	  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+	    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+	      <li class="am-dropdown" data-am-dropdown="">
+	        <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+	          <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+	        </a>
+	        <ul class="am-dropdown-content">
+	          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
+	          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+	          <li><a th:href="@{logout}"><span class="am-icon-power-off"></span> 退出</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </div>
+	</header>
+
+	<div class="am-g">
+		<div class="am-u-sm-10 am-u-sm-centered">
+			<table class="am-table am-table-striped am-table-hover table-main">
+	          <thead>
+	              <tr>
+	                <th class="table-id">ID</th><th class="table-title">用户名</th><th class="table-type">密码</th><th class="table-set">操作</th>
+	              </tr>
+	          </thead>
+	          <tbody>
+	            <tr th:each="item:${users}">
+	              <td th:text="${item.id}">1</td>
+	              <td class="am-hide-sm-only" th:text="${item.uname}">测试1号</td>
+	              <td class="am-hide-sm-only" th:text="${item.upwd}">2014年9月4日 7:28:47</td>
+	              <td>
+	                <div class="am-btn-toolbar">
+	                  <div class="am-btn-group am-btn-group-xs">
+	                   <a th:href="@{|user/delete/${item.id}|}"><button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 
+	                    	删除
+	                    </button></a>
+	                  </div>
+	                </div>
+	              </td>
+	            </tr>
+	          </tbody>
+	         </table>
+		</div>
+		<div class="am-u-sm-10 am-u-sm-centered">
+			<br /> Controller路径信息：
+			<div th:text="${ControllerClass}"></div>
+			<div th:text="${ControllerMethod}"></div>
+			<div th:text="${ControllerMethodType}"></div>
+			<div th:text="${ControllerUrl}"></div>
+		</div>
+	</div>
+<script th:src="@{resources/com/tdu/js/jquery.min.js}"></script>
+<script th:src="@{resources/com/tdu/js/amazeui.min.js}"></script>
 </body>
 </html>
