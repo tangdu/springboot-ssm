@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(
 	basePackages={
 		"com.tdu.service",
-		"com.tdu.web"
+		"com.tdu.web",
+		"com.tdu.task"
 	}
 )
 @MapperScan(

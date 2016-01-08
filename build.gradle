@@ -35,6 +35,7 @@ dependencies {
 		"org.springframework.boot:spring-boot-starter-actuator:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-test:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-jdbc:${spring_boot_version}",
+		"org.springframework.boot:spring-boot-starter-data-mongodb:${spring_boot_version}",
 		
 		"org.springframework:spring-context-support:${spring_framework_version}",
 		"org.springframework:spring-tx:${spring_framework_version}",
@@ -42,11 +43,14 @@ dependencies {
 		"javax.servlet:javax.servlet-api:${servlet_api_version}",
 		"org.glassfish.web:javax.el:${javax_el_version}",
 		"mysql:mysql-connector-java:${mysql_version}",
+		"org.flywaydb:flyway-core:${flyway_version}",
 		"org.mybatis:mybatis:${mybatis_version}",
 		"org.mybatis:mybatis-spring:${mybatis_spring_version}",
 		"org.mybatis.generator:mybatis-generator-core:${mybatis_generator_version}",
 		"net.sf.ehcache:ehcache:${ehcache_version}",
-		"junit:junit:${junit_version}"
+		"junit:junit:${junit_version}",
+		
+		project(":springboot-mongo")
 	)
     //ext.jarTree = fileTree(dir: 'libs', include: '**/*.jar')
     testCompile ()

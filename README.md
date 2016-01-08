@@ -23,7 +23,22 @@
 第一步：执行import.sql
 第一步：修改application.properties中的数据库连接信息
 第一步：运行Application.java
-第一步：输入地址：http://localhost:9080/ssm
+第一步：输入地址：http://localhost:9080/ssm 密码admin/admin
+###解说
+1 ComponentScanAutoConfiguration.java
+	自动扫描，便于模块化开发
+2 EhcacheAutoConfiguration.java
+	ehcache支持
+3 FrameworkMvcAutoConfiguration.java
+	自定义mvc，可添加拦截器、静态路径等
+4 MyBatisAutoConfiguration.java
+	集成mybatis
+5 MybatisProperties.java
+	mybatis以自己配置文件
+6 SimpleFlywayAutoConfiguration.java
+	自定义flyway配置 自动加载【db.migration.mysql】该目录下sql，便于数据库初始化
+7 WebMvcSecurityJpaAutoConfiguration.java
+	自定义mvc权限过滤器
 
 ##说明
 项目使用SpringSecurity做权限控制，默认用户名密码是admin/admin

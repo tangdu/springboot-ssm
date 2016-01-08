@@ -1,0 +1,1 @@
+insert into T_USER values('004','唐六','1232');

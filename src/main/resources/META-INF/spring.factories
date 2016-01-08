@@ -7,4 +7,6 @@ com.tdu.autoconfiguration.MyBatisAutoConfiguration,\
 com.tdu.autoconfiguration.WebMvcSecurityJpaAutoConfiguration,\
 com.tdu.autoconfiguration.FrameworkMvcAutoConfiguration,\
 com.tdu.autoconfiguration.ComponentScanAutoConfiguration,\
-com.tdu.autoconfiguration.EhcacheAutoConfiguration
+com.tdu.autoconfiguration.EhcacheAutoConfiguration,\
+com.tdu.autoconfiguration.SimpleFlywayAutoConfiguration,\
+com.tdu.autoconfiguration.SpringSchedulerAutoConfiguration
