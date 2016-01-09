@@ -17,13 +17,14 @@
 	mybatis_spring_version=1.2.3
 	ehcache_version=2.10.1
 ##环境搭建
-第一步：git下载代码
-第一步：执行gradle eclipse
-第一步：导入项目
-第一步：执行import.sql
-第一步：修改application.properties中的数据库连接信息
-第一步：运行Application.java
-第一步：输入地址：http://localhost:9080/ssm 密码admin/admin
+第1步：git下载代码
+第2步：如果测试mongo需要下载springboot-mongo
+第3步：执行gradle eclipse
+第4步：导入项目
+第5步：执行import.sql
+第6步：修改application.properties中的数据库连接信息
+第7步：运行Application.java
+第8步：输入地址：http://localhost:9080/ssm 密码admin/admin
 ###解说
 1 ComponentScanAutoConfiguration.java
 	自动扫描，便于模块化开发
@@ -49,13 +50,15 @@
 
 本实例为SpringBoot与MyBatis集成，参考官方的实现。
 
+数据库移植工具是flyway
+
 如果想到SpringBoot与JPA集成的，请看我另一个项目:springboot-ssh
 
 请关注我的主页，后期会提供一个比较完成的实例给大家。也是现在项目正在用到的。
 
 ##后期
 
-准备集成或测试的模块为：调度与flyway、mognodb、solr
+准备集成或测试的模块为，solr
 
 还在springBoot与redis持久化session集成，
 

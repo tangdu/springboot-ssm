@@ -24,7 +24,7 @@ configurations {
 
 dependencies {
 	providedRuntime(
-		"org.springframework.boot:spring-boot-starter-jetty:${spring_boot_version}",
+		"org.springframework.boot:spring-boot-starter-undertow:${spring_boot_version}",
 	)
 	compile(
 		"org.springframework.boot:spring-boot-starter:${spring_boot_version}",
@@ -50,7 +50,7 @@ dependencies {
 		"net.sf.ehcache:ehcache:${ehcache_version}",
 		"junit:junit:${junit_version}",
 		
-		project(":springboot-mongo")
+		//project(":springboot-mongo")
 	)
     //ext.jarTree = fileTree(dir: 'libs', include: '**/*.jar')
     testCompile ()
