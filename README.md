@@ -2,7 +2,7 @@
 
 项目由gradle构建，使用springBoot做为项目框架
 
-持久化使用MyBatis
+持久化使用MyBatis,并集成通用mapper,链接:http://git.oschina.net/free/Mapper
 
 以下为版本信息：
 
@@ -16,6 +16,7 @@
 	mybatis_version=3.3.0
 	mybatis_spring_version=1.2.3
 	ehcache_version=2.10.1
+	mybatis_mapper_version=3.3.8
 	
 效果
 [首页效果]('example1.png')
