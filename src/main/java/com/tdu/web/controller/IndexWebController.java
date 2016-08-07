@@ -25,7 +25,7 @@ public class IndexWebController {
 	
 	@RequestMapping(value={"index.html","/"},method=RequestMethod.GET)
 	public String indexPage(Model model){
-		List<User> users=userService.findAll();
+		List<User> users=userService.selectAll();
 		model.addAttribute("users",users);
 		return _PATH+"index";
 	}

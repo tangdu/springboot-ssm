@@ -30,14 +30,20 @@ public class UserWebController {
 		return users;
 	}
 
+	@RequestMapping("selectAll")
+	public @ResponseBody ResponseEntity<List<User>> selectAll() {
+		ResponseEntity<List<User>> users = new ResponseEntity<List<User>>(userService.selectAll(), HttpStatus.ACCEPTED);
+		return users;
+	}
+
 	@RequestMapping("findAll")
 	public @ResponseBody ResponseEntity<List<User>> findAll() {
 		ResponseEntity<List<User>> users = new ResponseEntity<List<User>>(userService.findAll(), HttpStatus.ACCEPTED);
 		return users;
 	}
-	
+
 	@RequestMapping("delete/{id}")
-	public @ResponseBody String  delete(@PathVariable String id) {
+	public @ResponseBody String delete(@PathVariable String id) {
 		userService.delete(id);
 		return "ok";
 	}
