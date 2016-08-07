@@ -19,7 +19,7 @@
 	mybatis_mapper_version=3.3.8
 	
 效果
-[首页效果]('example1.png')
+![首页效果](example1.png)
 
 ##环境搭建
 
