@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.tdu.pojo.User;
+import com.tdu.dao.pojo.User;
 import com.tdu.service.UserService;
 
 @Controller

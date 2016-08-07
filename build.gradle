@@ -17,14 +17,12 @@ repositories {
 configurations {
 	compile.exclude group: "org.springframework.boot", module: "spring-boot-starter-tomcat"
 	compile.exclude group: "org.springframework.boot", module: "spring-boot-starter-data-jpa"
-	compile.exclude group: "org.codehaus.woodstox", module: "wstx-asl"
 	compile.exclude group: "log4j"
-	compile.exclude group: "commons-fileupload"
 }
 
 dependencies {
 	providedRuntime(
-		"org.springframework.boot:spring-boot-starter-undertow:${spring_boot_version}",
+		"org.springframework.boot:spring-boot-starter-jetty:${spring_boot_version}",
 	)
 	compile(
 		"org.springframework.boot:spring-boot-starter:${spring_boot_version}",
@@ -32,10 +30,7 @@ dependencies {
 		"org.springframework.boot:spring-boot-autoconfigure:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-security:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-thymeleaf:${spring_boot_version}",
-		"org.springframework.boot:spring-boot-starter-actuator:${spring_boot_version}",
-		"org.springframework.boot:spring-boot-starter-test:${spring_boot_version}",
 		"org.springframework.boot:spring-boot-starter-jdbc:${spring_boot_version}",
-		"org.springframework.boot:spring-boot-starter-data-mongodb:${spring_boot_version}",
 		
 		"org.springframework:spring-context-support:${spring_framework_version}",
 		"org.springframework:spring-tx:${spring_framework_version}",
@@ -47,10 +42,11 @@ dependencies {
 		"org.mybatis:mybatis:${mybatis_version}",
 		"org.mybatis:mybatis-spring:${mybatis_spring_version}",
 		"org.mybatis.generator:mybatis-generator-core:${mybatis_generator_version}",
+		"tk.mybatis:mapper:${mybatis_mapper_version}",
 		"net.sf.ehcache:ehcache:${ehcache_version}",
 		"junit:junit:${junit_version}",
 		
-		//project(":springboot-mongo")
+		project(":springboot-ssm-dao")
 	)
     //ext.jarTree = fileTree(dir: 'libs', include: '**/*.jar')
     testCompile ()
